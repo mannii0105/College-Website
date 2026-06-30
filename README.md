@@ -24,4 +24,7 @@ A basic, responsive front-end layout for a college website built using HTML, CSS
 ├── images.jpeg   # The background image used on the Home page
 └── README.md     # Project documentation
 
+
+
+## Live show
 Clicke here to check: http://127.0.0.1:5500/Index.html
