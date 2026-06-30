@@ -27,4 +27,4 @@ A basic, responsive front-end layout for a college website built using HTML, CSS
 
 
 ## Live show
-Clicke here to check: http://127.0.0.1:5500/Index.html
+To check live copy this link and run: http://127.0.0.1:5500/Index.html
