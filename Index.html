@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top scrolling text -->
+    <header class="marquee-container">
+        <div class="marquee-text">Welcome to BCREC - Admissions Open for 2026-2027!</div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="main-container">
+        
+        <!-- Left Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav>
+                <button id="home-btn" class="nav-btn active">Home</button>
+                <button id="login-btn" class="nav-btn">Login</button>
+            </nav>
+        </aside>
+
+        <!-- Right Content Area -->
+        <main class="content-area">
+            
+            <!-- Home Section -->
+            <section id="home-section" class="content-section">
+                <div class="home-content-box">
+                    <h2>Welcome to Our Campus</h2>
+                    <p>Welcome to our official college portal. Explore our campus, courses, and the latest news here. We are dedicated to providing excellence in education.</p>
+                </div>
+
+                <!-- NEW: Quick Info Cards -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🎓 Admissions</h3>
+                        <p>Apply now for the upcoming academic year. Check eligibility and deadlines.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📚 Academics</h3>
+                        <p>Explore our wide range of undergraduate and postgraduate programs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>⚽ Campus Life</h3>
+                        <p>Discover our student clubs, sports facilities, and upcoming campus events.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3> 📢 Notices</h3>
+                        <p>Stay updated with the latest announcements and important notifications.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Login Section -->
+            <section id="login-section" class="content-section hidden">
+                <h2>Portal Login</h2>
+                
+                <!-- Toggle Buttons for Student / Staff -->
+                <div class="login-toggles">
+                    <button id="student-toggle" class="toggle-btn active">Student Login</button>
+                    <button id="staff-toggle" class="toggle-btn">Staff Login</button>
+                </div>
+
+                <!-- Student Login Form -->
+                <form id="student-form" class="login-form">
+                    <h3>Student Portal</h3>
+                    <div class="input-group">
+                        <label for="student-id">Student ID / Roll Number</label>
+                        <input type="text" id="student-id" placeholder="Enter your Student ID">
+                    </div>
+                    <div class="input-group">
+                        <label for="student-password">Password</label>
+                        <input type="password" id="student-password" placeholder="Enter your password">
+                    </div>
+                    
+                    <!-- NEW: Password Options -->
+                    <div class="password-options">
+                        <label><input type="checkbox" onclick="togglePassword('student-password')"> Show Password</label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+
+                    <button type="button" class="submit-btn">Login as Student</button>
+                </form>
+
+                <!-- Staff Login Form (Hidden by default) -->
+                <form id="staff-form" class="login-form hidden">
+                    <h3>Staff Portal</h3>
+                    <div class="input-group">
+                        <label for="staff-email">Staff Email</label>
+                        <input type="email" id="staff-email" placeholder="Enter your official email">
+                    </div>
+                    <div class="input-group">
+                        <label for="staff-password">Password</label>
+                        <input type="password" id="staff-password" placeholder="Enter your password">
+                    </div>
+                    
+                    <!-- NEW: Password Options -->
+                    <div class="password-options">
+                        <label><input type="checkbox" onclick="togglePassword('staff-password')"> Show Password</label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+
+                    <button type="button" class="submit-btn">Login as Staff</button>
+                </form>
+
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
